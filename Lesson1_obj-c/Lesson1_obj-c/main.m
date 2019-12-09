@@ -8,27 +8,52 @@
 
 #import <Foundation/Foundation.h>
 
+void checkChar() {
+    char charToCheck;
+    printf("Введите букву для проверки:");
+            scanf("%c", &charToCheck);
+    if (((charToCheck >= 'a') && (charToCheck <= 'z')) || ((charToCheck >= 'A') && (charToCheck <= 'Z'))) {
+        NSLog(@"Буква %c входит в английский алфавит", charToCheck);
+    } else {
+        NSLog(@"Данный сомвол не входит в английский алфавит");
+    }
+}
+
+int addition(int a, int b) {
+    return a + b;
+}
+
+int multiplication(int a, int b) {
+    return a * b;
+}
+
+
+int calculate(NSString *method, int a, int b) {
+    
+    if ([method isEqualToString:@"+"]) {
+        return a + b;
+    } else if ([method isEqualToString:@"-"]) {
+        return a - b;
+    } else if ([method isEqualToString:@"*"]) {
+        return a * b;
+    } else if ([method isEqualToString:@"/"]) {
+        return a / b;
+    } else if ([method isEqualToString:@"%"]) {
+        return a % b;
+    } else {
+        NSLog(@"Функция не знает переданный метод");
+        return 0;
+    }
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        int first = 0;
-        int second = 0;
-        printf("First number:");
-        scanf("%d", &first);
-        printf("Second number:");
-        scanf("%d", &second);
-        NSLog(@"\nСумма = %d, \nРазность = %d, \nПроизведение = %d, \nЧастное от целочисленного деления = %d, \nОстаток от деления = %d", first + second, first - second, first * second, first / second, first % second);
+        checkChar();
         
-        int a,b,c;
-        printf("Введите 3 числа через пробел:");
-        scanf("%d%d%d", &a, &b, &c);
-        if ((a > b && a < c) || (a > b && a < c))
-            NSLog(@"Среднее число = %d", a);
-        else if ((b > a && b < c) || ( b > a && b < c))
-            NSLog(@"Среднее число = %d", b);
-        else if ((c > a && c < b) || ( a > c && b < c))
-            NSLog(@"Среднее число = %d", c);
-        else NSLog(@"Среди введенных чисел нет среднего");
+        int sum = addition(3, 5);
+        int composition = multiplication(3, 5);
+        NSLog(@"Result: \n sum = %i, \n composition = %i", sum, composition);
     }
     return 0;
 }
