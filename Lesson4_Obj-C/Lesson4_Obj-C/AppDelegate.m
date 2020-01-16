@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "Student.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    Student *ivanIvanov = [[Student alloc] initWithName:@"Ivan" surname:@"Ivanov" age:@20];
+    [ivanIvanov description];
+    [ivanIvanov increaseAge];
+    [ivanIvanov description];
+    [ivanIvanov increaseAge];
+    [ivanIvanov description];
+    
     // Override point for customization after application launch.
     return YES;
 }

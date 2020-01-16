@@ -13,6 +13,7 @@
 		586BB58D23CF2E2B00BCE0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586BB58C23CF2E2B00BCE0AD /* Assets.xcassets */; };
 		586BB59023CF2E2B00BCE0AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586BB58E23CF2E2B00BCE0AD /* LaunchScreen.storyboard */; };
 		586BB59323CF2E2B00BCE0AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 586BB59223CF2E2B00BCE0AD /* main.m */; };
+		586BB59B23CF2F5400BCE0AD /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 586BB59A23CF2F5400BCE0AD /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		586BB58F23CF2E2B00BCE0AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		586BB59123CF2E2B00BCE0AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		586BB59223CF2E2B00BCE0AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		586BB59923CF2F5400BCE0AD /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		586BB59A23CF2F5400BCE0AD /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				586BB58C23CF2E2B00BCE0AD /* Assets.xcassets */,
 				586BB58E23CF2E2B00BCE0AD /* LaunchScreen.storyboard */,
 				586BB59123CF2E2B00BCE0AD /* Info.plist */,
+				586BB59923CF2F5400BCE0AD /* Student.h */,
+				586BB59A23CF2F5400BCE0AD /* Student.m */,
 				586BB59223CF2E2B00BCE0AD /* main.m */,
 			);
 			path = "Lesson4_Obj-C";
@@ -144,6 +149,7 @@
 				586BB58823CF2E2800BCE0AD /* ViewController.m in Sources */,
 				586BB59323CF2E2B00BCE0AD /* main.m in Sources */,
 				586BB58523CF2E2700BCE0AD /* AppDelegate.m in Sources */,
+				586BB59B23CF2F5400BCE0AD /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
