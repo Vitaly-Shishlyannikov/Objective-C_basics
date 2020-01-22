@@ -20,39 +20,51 @@ typedef enum CalcMethod CalcMethod;
 
 int calculate(CalcMethod method, int a, int b) {
     
+    int resultInt;
+    
     switch (method) {
         case Plus:
-            return a + b;
+            resultInt = a + b;
             break;
         case Minus:
-            return a - b;
+            resultInt = a - b;
             break;
         case Multiply:
-            return a * b;
+            resultInt = a * b;
             break;
         case DivideWhole:
-            return a / b;
+            resultInt = a / b;
             break;
         case GetRemainder:
-            return a % b;
+            resultInt = a % b;
             break;
         default:
             return 0;
     }
+    return resultInt;
+    
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        
-        // 2nd task
-        int sum = calculate(Plus, 5, 3);
-        int composition  = calculate(Multiply, 5, 3);
-        int remainder = calculate(GetRemainder, 5, 3);
-        
-        NSLog(@"Result: \n sum = %i, \n composition = %i, \n remainder = %i", sum, composition, remainder);
-        
+    
+    NSNumber* sum = [[NSNumber alloc] init];
+    [sum release];
+    sum = [NSNumber numberWithInt: calculate(Plus, 5, 3)];
+
+    NSNumber* composition  = [[NSNumber alloc] init];
+    [composition release];
+    composition = [NSNumber numberWithInt: calculate(Multiply, 5, 3)];
+    
+    
+    NSNumber* remainder = [[NSNumber alloc] init];
+    [remainder release];
+    remainder = [NSNumber numberWithInt: calculate(GetRemainder, 5, 3)];
+
+    NSLog(@"Result: \n sum = %@, \n composition = %@, \n remainder = %@", sum, composition, remainder);
+    
     }
     return 0;
 }
+
 
