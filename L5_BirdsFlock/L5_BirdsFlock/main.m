@@ -14,6 +14,9 @@
 
 int main(int argc, char * argv[]) {
     
+    NSAutoreleasePool *pool;
+    pool = [NSAutoreleasePool new];
+    
     Flock *flock = [[Flock alloc] init];
     
     Bird *bird1 = [[Bird alloc] initWithName:@"FirstBird"];
@@ -27,7 +30,9 @@ int main(int argc, char * argv[]) {
     
     [flock composeWithLeader:leader andBirds:birds];
     
-    [flock release];
+    [flock autorelease];
+    
+    [pool release];
     
     return 0;
 }
