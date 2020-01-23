@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B1D6ED23D9714C00085E4A /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B1D6EC23D9714C00085E4A /* Bird.m */; };
+		58B1D6F023D972AD00085E4A /* LeaderBird.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B1D6EF23D972AD00085E4A /* LeaderBird.m */; };
+		58B1D6F323D974CB00085E4A /* Flock.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B1D6F223D974CB00085E4A /* Flock.m */; };
 		58CADF9123D8523700DC4C6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CADF9023D8523700DC4C6B /* AppDelegate.m */; };
 		58CADF9423D8523700DC4C6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CADF9323D8523700DC4C6B /* ViewController.m */; };
 		58CADF9723D8523700DC4C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CADF9523D8523700DC4C6B /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58B1D6EB23D9714C00085E4A /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		58B1D6EC23D9714C00085E4A /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		58B1D6EE23D972AD00085E4A /* LeaderBird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaderBird.h; sourceTree = "<group>"; };
+		58B1D6EF23D972AD00085E4A /* LeaderBird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaderBird.m; sourceTree = "<group>"; };
+		58B1D6F123D974CB00085E4A /* Flock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flock.h; sourceTree = "<group>"; };
+		58B1D6F223D974CB00085E4A /* Flock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flock.m; sourceTree = "<group>"; };
 		58CADF8C23D8523700DC4C6B /* L5_BirdsFlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L5_BirdsFlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CADF8F23D8523700DC4C6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58CADF9023D8523700DC4C6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +76,12 @@
 				58CADF9A23D8523900DC4C6B /* LaunchScreen.storyboard */,
 				58CADF9D23D8523900DC4C6B /* Info.plist */,
 				58CADF9E23D8523900DC4C6B /* main.m */,
+				58B1D6EB23D9714C00085E4A /* Bird.h */,
+				58B1D6EC23D9714C00085E4A /* Bird.m */,
+				58B1D6EE23D972AD00085E4A /* LeaderBird.h */,
+				58B1D6EF23D972AD00085E4A /* LeaderBird.m */,
+				58B1D6F123D974CB00085E4A /* Flock.h */,
+				58B1D6F223D974CB00085E4A /* Flock.m */,
 			);
 			path = L5_BirdsFlock;
 			sourceTree = "<group>";
@@ -143,6 +158,9 @@
 			files = (
 				58CADF9423D8523700DC4C6B /* ViewController.m in Sources */,
 				58CADF9F23D8523900DC4C6B /* main.m in Sources */,
+				58B1D6F023D972AD00085E4A /* LeaderBird.m in Sources */,
+				58B1D6F323D974CB00085E4A /* Flock.m in Sources */,
+				58B1D6ED23D9714C00085E4A /* Bird.m in Sources */,
 				58CADF9123D8523700DC4C6B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
