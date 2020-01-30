@@ -13,6 +13,7 @@
 		586C10A823E2CE79006A8C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586C10A723E2CE79006A8C56 /* Assets.xcassets */; };
 		586C10AB23E2CE79006A8C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586C10A923E2CE79006A8C56 /* LaunchScreen.storyboard */; };
 		586C10AE23E2CE79006A8C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 586C10AD23E2CE79006A8C56 /* main.m */; };
+		586C10B923E2D137006A8C56 /* CarInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 586C10B823E2D137006A8C56 /* CarInformation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		586C10AA23E2CE79006A8C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		586C10AC23E2CE79006A8C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		586C10AD23E2CE79006A8C56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		586C10B723E2D137006A8C56 /* CarInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarInformation.h; sourceTree = "<group>"; };
+		586C10B823E2D137006A8C56 /* CarInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarInformation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				586C10A923E2CE79006A8C56 /* LaunchScreen.storyboard */,
 				586C10AC23E2CE79006A8C56 /* Info.plist */,
 				586C10AD23E2CE79006A8C56 /* main.m */,
+				586C10B723E2D137006A8C56 /* CarInformation.h */,
+				586C10B823E2D137006A8C56 /* CarInformation.m */,
 			);
 			path = Lesson6_blocks;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				586C10A323E2CE78006A8C56 /* ViewController.m in Sources */,
 				586C10AE23E2CE79006A8C56 /* main.m in Sources */,
 				586C10A023E2CE78006A8C56 /* AppDelegate.m in Sources */,
+				586C10B923E2D137006A8C56 /* CarInformation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

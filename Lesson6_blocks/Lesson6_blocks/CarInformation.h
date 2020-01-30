@@ -10,7 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum FuelType {
+    gasoline,
+    diesel
+} FuelType;
+
 @interface CarInformation : NSObject
+
++ (void)printInformationCarModel: (NSString*)model fuelType: (FuelType)type productionYear: (int)year hasHandcarriage: (BOOL)hasHandcarriage;
 
 @end
 
