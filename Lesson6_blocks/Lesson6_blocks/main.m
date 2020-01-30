@@ -12,11 +12,17 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        
-        [CarInformation printInformationCarModel:@"BMW" fuelType: gasoline productionYear:2000 hasHandcarriage:NO];
+
+        NSOperationQueue *newQueue = [NSOperationQueue new];
+
+        [newQueue addOperationWithBlock:^{
+            [CarInformation printInformationCarModel:@"BMW" fuelType: gasoline productionYear:2000 hasHandcarriage:NO];
+        }];
+
         [CarInformation printInformationCarModel:@"MAN" fuelType: diesel productionYear:1995 hasHandcarriage:YES];
         
+        
     }
-    
+
     return 0;
 }

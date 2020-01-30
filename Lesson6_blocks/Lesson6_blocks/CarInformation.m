@@ -46,12 +46,22 @@ NSString* (^handcarriage)(BOOL) = ^(BOOL hasHandcarriage) {
 };
 
 
-
 @implementation CarInformation
 
 + (void)printInformationCarModel: (NSString*)model fuelType: (FuelType)type productionYear: (int)prodYear hasHandcarriage: (BOOL)hasHandcarriage {
     
+    __block NSString *helloPr = @"";
+    __block NSString *modelPr = @"";
+    __block NSString *fuelTypePr = @"";
+    __block NSString *handcarriagePr = @"";
+    __block int agePr = 0;
+    
     __block int currentYear = 0;
+    
+    
+    dispatch_queue_t utilityQueue = dispatch_get_global_queue(QOS_CLASS_UTILITY, 0);
+    dispatch_queue_t userInteractiveQueue = dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0);
+    
     
     // 6
     void (^getCurrentYear)(void) = ^ {
@@ -60,18 +70,34 @@ NSString* (^handcarriage)(BOOL) = ^(BOOL hasHandcarriage) {
         currentYear = (int)year;
     };
     
-    getCurrentYear();
     
+    dispatch_async(userInteractiveQueue, ^ {
+        helloPr = hello();
+    });
+
+    dispatch_sync(utilityQueue, ^ {
+        modelPr = addModelWord(model);
+    });
     
-    NSString *helloPr = hello();
-    NSString *modelPr = addModelWord(model);
-    int agePr = age(prodYear, currentYear);
-    NSString *fuelTypePr = fuelType(type);
-    NSString *handcarriagePr = handcarriage(hasHandcarriage);
+    dispatch_sync(userInteractiveQueue, ^{
+        getCurrentYear();
+    });
+
+    dispatch_sync(userInteractiveQueue, ^{
+        agePr = age(prodYear, currentYear);
+    });
+
+    dispatch_sync(utilityQueue, ^{
+        fuelTypePr = fuelType(type);
+    });
+    
+    dispatch_sync(userInteractiveQueue, ^{
+        handcarriagePr = handcarriage(hasHandcarriage);
+    });
     
     
     NSLog(@"\n%@\nЭто автомобиль %@, его возраст - %d лет, тип двигателя - %@, %@",  helloPr, modelPr, agePr, fuelTypePr, handcarriagePr);
-   
+    
 }
 
 @end
