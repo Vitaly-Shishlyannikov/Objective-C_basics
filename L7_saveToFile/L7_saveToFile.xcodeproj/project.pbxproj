@@ -44,7 +44,7 @@
 		58A2BC6823EBF5A200B07B7D = {
 			isa = PBXGroup;
 			children = (
-				58A2BC7323EBF5A300B07B7D /* test */,
+				58A2BC7323EBF5A300B07B7D /* L7_saveToFile */,
 				58A2BC7223EBF5A300B07B7D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,14 +57,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58A2BC7323EBF5A300B07B7D /* test */ = {
+		58A2BC7323EBF5A300B07B7D /* L7_saveToFile */ = {
 			isa = PBXGroup;
 			children = (
 				58A2BC7423EBF5A300B07B7D /* main.m */,
 				58A2BC7B23EBF7D800B07B7D /* FootballPlayer.h */,
 				58A2BC7C23EBF7D800B07B7D /* FootballPlayer.m */,
 			);
-			path = test;
+			path = L7_saveToFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58A2BC6C23EBF5A300B07B7D /* Build configuration list for PBXProject "test" */;
+			buildConfigurationList = 58A2BC6C23EBF5A300B07B7D /* Build configuration list for PBXProject "L7_saveToFile" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,7 +263,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58A2BC6C23EBF5A300B07B7D /* Build configuration list for PBXProject "test" */ = {
+		58A2BC6C23EBF5A300B07B7D /* Build configuration list for PBXProject "L7_saveToFile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58A2BC7623EBF5A300B07B7D /* Debug */,

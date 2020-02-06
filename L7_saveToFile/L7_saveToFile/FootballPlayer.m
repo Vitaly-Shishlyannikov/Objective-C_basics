@@ -37,7 +37,6 @@
     NSMutableDictionary *values = [NSMutableDictionary new];
     unsigned int count;
     objc_property_t *properties = class_copyPropertyList([self class], &count);
-    //приведение необходимо для работы с функцией начиная с Xcode 11
     id (*id_objc_msgSend)(id, SEL) = (id (*)(id, SEL)) objc_msgSend;
     for (int i = 0; i < count; i++) {
         objc_property_t property = properties[i];
